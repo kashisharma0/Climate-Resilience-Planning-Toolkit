@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"EverGreenPath"</title>
+  <style>
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center; /* Center align all content */
+    }
+    header {
+      background-color: #5F8D4E;
+      color: #fff;
+      padding: 1px 0;
+    }
+    header h1 {
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .climate-info {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .pollution-info {
+      background-color: #fff;
+      color: #333;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .pollution-info h2 {
+      margin-bottom: 10px;
+    }
+    .pollution-types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .pollution-types .pollution-item {
+      width: 30%;
+      margin: 10px;
+      text-align: center;
+    }
+    .pollution-types .pollution-item img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: -45px ; /* Reduced padding */
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer p {
+      margin-bottom: 10px;
+    }
+    footer nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    footer nav ul li {
+      margin: 0 10px;
+    }
+    footer nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Style for the map iframe */
+    #map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 130px); /* Adjust height to fit screen */
+    }
+    #map-iframe {
+      border: none;
+      width: 100%;
+      max-width: 940px; /* Adjust maximum width if needed */
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Ever-GreenPath</h1><br>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <!-- Map iframe container -->
+  <div id="map-container">
+    <iframe id="map-iframe" src="main.html"></iframe>
+  </div>
+</body>
+</html>
+
+
+
